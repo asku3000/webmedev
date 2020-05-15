@@ -1,0 +1,55 @@
+@import "../shared/variables";
+.nav {
+    align-self: center;
+    &-list {
+        display: flex;
+        list-style: none;
+        align-items: center;
+    }
+    &-item {
+        padding: 1rem 2rem;
+        transform: scale(1);
+        position: relative;
+        cursor: pointer;
+        transition: all .3s;
+        &:not(:last-child) {
+            margin-right: 2rem;
+        }
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    &-item::before {
+        content: "";
+        display: inline-block;
+        height: 80%;
+        width: 3px;
+        color: inherit;
+        position: absolute;
+        left: 0;
+        top: .5rem;
+        background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+        transition: all .4s ease-in;
+    }
+    &-link,
+    &-link:link,
+    &-link:visited {
+        z-index: 1000;
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        position: relative;
+        transition: translate .5s .2s ease-in;
+    }
+    &-item:hover::before,
+    &-item-active::before {
+        width: 100%;
+    }
+    &-item:hover,
+    &-item-active {
+        color: $color-white;
+        font-weight: 600;
+    }
+    &-item:hover+&-link {
+        transform: translateX(-3px);
+    }
+}

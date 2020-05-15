@@ -1,0 +1,125 @@
+@import "../shared/variables";
+.inquiry {
+    &-checkbox {
+        display: none;
+    }
+    &-button {
+        display: block;
+        width: 10rem;
+        height: 10rem;
+        background-color: $color-grey-light-2;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 81% 98%, 50% 73%, 18% 98%, 32% 57%, 2% 35%, 39% 35%);
+        position: fixed;
+        padding: 1rem;
+        right: 6rem;
+        top: 10rem;
+        z-index: 5000;
+        text-align: center;
+        cursor: pointer;
+        transition: all .2s;
+        &-text {
+            width: 50%;
+            color: $color-primary;
+            font-size: 1.5rem;
+            font-weight: 600;
+            position: absolute;
+            top: 3rem;
+            left: 2.3rem;
+        }
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    &-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 3000;
+        opacity: 0;
+        width: 0;
+        transition: all .3s .2s ease-in-out;
+    }
+    &-intro {
+        text-align: center;
+        color: $color-white;
+        transition: all .4s .5s ease-in-out;
+    }
+    &-content {
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-between;
+        width: 70vw;
+    }
+    &-content-features {
+        display: block;
+        width: 60%;
+        &-list {
+            color: $color-white;
+        }
+        &-item {
+            padding: 1rem;
+            font-size: 1.6rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+        transition: all .4s .5s ease-in-out;
+    }
+    &-content-form {
+        display: block;
+        width: 40%;
+        transition: all .4s .5s ease-in-out;
+    }
+    &-form {
+        display: flex;
+        flex-direction: column;
+        &-label {
+            font-size: 1.7rem;
+            font-weight: 600;
+            margin-bottom: .5rem;
+            color: $color-white;
+        }
+        &-input {
+            padding: .7rem;
+            width: 100%;
+            font-family: inherit;
+            border-radius: 1rem;
+            border: none;
+            font-size: 1.8rem;
+            color: $color-primary-dark;
+            &:focus {
+                outline: none;
+            }
+            &:not(:last-child) {
+                margin-bottom: 1.2rem;
+            }
+        }
+    }
+    &-background {
+        width: 10rem;
+        height: 10rem;
+        position: fixed;
+        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 81% 98%, 50% 73%, 18% 98%, 32% 57%, 2% 35%, 39% 35%);
+        padding: 1rem;
+        right: 6rem;
+        top: 10rem;
+        z-index: 2900;
+        background-image: radial-gradient($color-primary-light, $color-primary-dark);
+        transition: all .8s cubic-bezier(.88, .07, .64, .82);
+    }
+    &-checkbox:checked~&-box {
+        opacity: 1;
+        width: 100%;
+    }
+    &-checkbox:checked~&-background {
+        transform: scale(80);
+    }
+    // &-checkbox:checked~.inquiry-box {
+    //     transform: translateX(0);
+    //     opacity: 1;
+    // }
+}

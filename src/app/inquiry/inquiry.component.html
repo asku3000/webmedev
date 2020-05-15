@@ -1,0 +1,46 @@
+<div class="inquiry">
+    <input type="checkbox" id="inquiry-toggle" class="inquiry-checkbox">
+    <label for="inquiry-toggle" (click)="onInquiryToggle()" class="inquiry-button">
+        <span class="inquiry-button-text">Inquire Now</span>
+    </label>
+    <div class="inquiry-background">&nbsp;</div>
+    <div class="inquiry-box">
+        <div class="inquiry-intro" [ngStyle]="setStyles3()">
+            <h1 class="heading-main util-margin-bottom-medium">
+                The Best Web Services
+            </h1>
+            <h3 class="heading-tertiary util-margin-bottom-small">
+                Inquire Now
+            </h3>
+            <p class="paragraph">
+                Here it begins the expansion of your business
+            </p>
+        </div>
+        <div class="inquiry-content">
+            <div class="inquiry-content-features" [ngStyle]="setStyles1()">
+                <ul class="inquiry-content-features-list">
+                    <li class="inquiry-content-features-item">Responsive websites, works on any device</li>
+                    <li class="inquiry-content-features-item">We provide Clear, User-friendly Navigation</li>
+                    <li class="inquiry-content-features-item">You can have Simple and Professional Web Design</li>
+                    <li class="inquiry-content-features-item">We tend to provide the modern websites</li>
+                    <li class="inquiry-content-features-item">We work on the best and latest technologies in the market</li>
+                    <li class="inquiry-content-features-item">SEO for your website ranking</li>
+                    <li class="inquiry-content-features-item">Works on multiple browsers</li>
+                    <li class="inquiry-content-features-item">FREE! 30 days of support after the project is delivered</li>
+                </ul>
+            </div>
+            <div class="inquiry-content-form" [ngStyle]="setStyles2()">
+                <form action="#" class="inquiry-form">
+                    <label for="name" class="inquiry-form-label">Name</label>
+                    <input type="text" placeholder="Name" id="name" class="inquiry-form-input">
+                    <label for="email" class="inquiry-form-label">Email</label>
+                    <input type="text" placeholder="Email" id="email" class="inquiry-form-input">
+                    <label for="number" class="inquiry-form-label">Contact No.</label>
+                    <input type="text" placeholder="Phone Number" id="number" class="inquiry-form-input">
+                    <label for="details" class="inquiry-form-label">Description</label>
+                    <input type="textarea" placeholder="Description" id="details" class="inquiry-form-input">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

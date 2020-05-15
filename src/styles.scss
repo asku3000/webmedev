@@ -1,1 +1,58 @@
-/* You can add global styles to this file, and also import other style files */
+@import "./app/shared/variables";
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    min-height: 100vh;
+    color: $color-grey-dark-3;
+    font-size: 1.6rem;
+    padding: 2rem;
+    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+}
+
+.heading {
+    letter-spacing: .5px;
+    font-weight: 700;
+    color: inherit;
+    &-main {
+        font-size: 3.5rem;
+    }
+    &-secondary {
+        font-size: 2.7rem;
+    }
+    &-tertiary {
+        font-size: 2rem;
+    }
+}
+
+.util-margin-bottom-small {
+    margin-bottom: 1rem;
+}
+
+.util-margin-bottom-medium {
+    margin-bottom: 2rem;
+}
+
+.util-margin-bottom-big {
+    margin-bottom: 4rem;
+}
+
+.util-margin-bottom-huge {
+    margin-bottom: 6rem;
+}

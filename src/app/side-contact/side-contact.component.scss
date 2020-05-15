@@ -1,0 +1,30 @@
+@import "../shared/variables";
+.side-contact {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    top: 50%;
+    &-box {
+        display: flex;
+        padding: 1rem 2rem;
+        transform: translateX(84%);
+        &:not(:last-child) {
+            margin-bottom: .2rem;
+        }
+        transition: all .4s ease-in-out;
+    }
+    &-icon {
+        height: 2.25rem;
+        width: 2.25rem;
+        fill: $color-white;
+        margin-right: 1rem;
+    }
+    &-text {
+        color: $color-white;
+    }
+    &-box:hover {
+        transform: translateX(0);
+        background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    }
+}
