@@ -22,8 +22,9 @@ body {
     min-height: 100vh;
     color: $color-grey-dark-3;
     font-size: 1.6rem;
-    padding: 2rem;
-    background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    padding: .5rem 2rem;
+    background-color: $color-grey-light-1;
+    // background-image: linear-gradient(to right bottom, $color-grey-light-3, $color-grey-dark-2);
 }
 
 .heading {
@@ -55,4 +56,25 @@ body {
 
 .util-margin-bottom-huge {
     margin-bottom: 6rem;
+}
+
+//// Margin Top /////////
+.util-margin-top-small {
+    margin-top: 1rem;
+}
+
+.util-margin-top-medium {
+    margin-top: 2rem;
+}
+
+.util-margin-top-big {
+    margin-top: 4rem;
+}
+
+.util-margin-top-huge {
+    margin-top: 6rem;
+}
+
+.util-margin-top-double-huge {
+    margin-top: 10rem;
 }

@@ -7,7 +7,8 @@
     background-color: $color-grey-dark-2;
     position: fixed;
     bottom: 4rem;
-    left: 2rem;
+    left: 2.5rem;
+    z-index: 100;
     border-radius: 10px;
     text-decoration: none;
     animation-name: vibrate;

@@ -5,26 +5,33 @@
     position: fixed;
     right: 0;
     top: 50%;
+    cursor: pointer;
     &-box {
         display: flex;
-        padding: 1rem 2rem;
-        transform: translateX(84%);
+        padding: 1rem 1.5rem;
+        transform: translateX(85%);
+        background-color: $color-grey-light-1;
         &:not(:last-child) {
             margin-bottom: .2rem;
         }
         transition: all .4s ease-in-out;
+        border-radius: 1rem;
     }
     &-icon {
         height: 2.25rem;
         width: 2.25rem;
-        fill: $color-white;
+        fill: $color-primary;
         margin-right: 1rem;
     }
     &-text {
-        color: $color-white;
+        color: $color-primary;
+        font-weight: 600;
     }
     &-box:hover {
         transform: translateX(0);
-        background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+        // background-image: linear-gradient(to right bottom, $color-primary-light, $color-primary-dark);
+    }
+    &-box:hover &-icon {
+        // fill: $color-white;
     }
 }
