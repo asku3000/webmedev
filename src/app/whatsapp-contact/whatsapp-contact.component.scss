@@ -1,0 +1,30 @@
+@import "../shared/variables";
+@import "../shared/animations";
+.whatsapp {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: $color-grey-dark-2;
+    position: fixed;
+    bottom: 4rem;
+    left: 2rem;
+    border-radius: 10px;
+    text-decoration: none;
+    animation-name: vibrate;
+    animation-duration: .9s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    &-icon {
+        height: 1.8rem;
+        width: 1.8rem;
+        fill: $color-primary;
+        margin-right: 1.2rem;
+    }
+    &-text {
+        color: $color-white;
+    }
+    &:hover {
+        -webkit-animation: 0;
+    }
+}

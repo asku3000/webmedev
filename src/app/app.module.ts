@@ -13,6 +13,7 @@ import { InquiryComponent } from './inquiry/inquiry.component';
 import { HomeComponent } from './home/home.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { WhatsappContactComponent } from './whatsapp-contact/whatsapp-contact.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     HomeComponent,
     AboutUsComponent,
     ContactUsComponent,
+    WhatsappContactComponent,
   ],
   imports: [
     BrowserModule,
