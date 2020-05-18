@@ -30,3 +30,12 @@
         background-position: 0rem;
     }
 }
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotateY(360deg);
+    }
+    to {
+        -webkit-transform: rotateY(0);
+    }
+}
