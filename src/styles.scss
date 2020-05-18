@@ -28,18 +28,29 @@ body {
 }
 
 .heading {
-    letter-spacing: .5px;
-    font-weight: 700;
-    color: inherit;
     &-main {
+        letter-spacing: .5px;
+        font-weight: 800;
+        color: inherit;
+        text-transform: uppercase;
         font-size: 3.5rem;
     }
     &-secondary {
+        letter-spacing: .5px;
+        font-weight: 700;
+        color: inherit;
+        text-transform: uppercase;
         font-size: 2.7rem;
     }
     &-tertiary {
+        color: inherit;
+        text-transform: uppercase;
         font-size: 2rem;
     }
+}
+
+.paragraph {
+    font-size: 1.6rem;
 }
 
 .util-margin-bottom-small {
@@ -77,4 +88,19 @@ body {
 
 .util-margin-top-double-huge {
     margin-top: 10rem;
+}
+
+.whatsapp {
+    fill: $color-whatsapp;
+    color: $color-whatsapp;
+}
+
+.mail {
+    fill: $color-mail;
+    color: $color-mail;
+}
+
+.facebook {
+    fill: $color-facebook;
+    color: $color-facebook;
 }

@@ -5,21 +5,23 @@
     }
     &-button {
         display: block;
-        width: 10rem;
+        width: 11rem;
         height: 10rem;
-        background-color: $color-grey-light-2;
-        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 81% 98%, 50% 73%, 18% 98%, 32% 57%, 2% 35%, 39% 35%);
-        position: fixed;
+        background-color: gold;
+        //clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 81% 98%, 50% 73%, 18% 98%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 35%, 61% 35%, 98% 35%, 82% 65%, 65% 96%, 50% 79%, 33% 96%, 16% 65%, 2% 35%, 39% 35%);
+        position: absolute;
         padding: 1rem;
-        right: 6rem;
-        top: 10rem;
+        right: 5rem;
+        top: 0rem;
         z-index: 5000;
         text-align: center;
         cursor: pointer;
         transition: all .2s;
+        margin-top: -3.5rem;
         &-text {
             width: 50%;
-            color: $color-primary;
+            color: $color-white;
             font-size: 1.5rem;
             font-weight: 600;
             position: absolute;
@@ -100,16 +102,18 @@
         }
     }
     &-background {
-        width: 10rem;
+        width: 11rem;
         height: 10rem;
-        position: fixed;
-        clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 81% 98%, 50% 73%, 18% 98%, 32% 57%, 2% 35%, 39% 35%);
+        position: absolute;
+        //clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 81% 98%, 50% 73%, 18% 98%, 32% 57%, 2% 35%, 39% 35%);
+        clip-path: polygon(50% 35%, 61% 35%, 98% 35%, 82% 65%, 65% 96%, 50% 79%, 33% 96%, 16% 65%, 2% 35%, 39% 35%);
         padding: 1rem;
-        right: 6rem;
-        top: 10rem;
+        right: 5rem;
+        top: 0rem;
         z-index: 2900;
         background-image: radial-gradient($color-primary-light, $color-primary-dark);
         transition: all .8s cubic-bezier(.88, .07, .64, .82);
+        margin-top: -3.5rem;
     }
     &-checkbox:checked~&-box {
         opacity: 1;
